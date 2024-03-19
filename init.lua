@@ -1,6 +1,7 @@
 -- 如果在vscode中打开
 if vim.g.vscode then
     -- VSCode extension
+    require("vscode.lazy")
     require("vscode.options")
     require("vscode.keymaps")
 else
