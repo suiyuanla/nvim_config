@@ -10,7 +10,6 @@
 --     vim.cmd('colorscheme github_dark')
 --   end,
 -- }
-
 -- return {
 --   "olimorris/onedarkpro.nvim",
 --   priority = 1000, -- Ensure it loads first
@@ -18,5 +17,4 @@
 --     vim.cmd("colorscheme onedark")
 --   end,
 -- }
-
 return {}
