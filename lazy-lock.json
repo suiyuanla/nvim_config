@@ -1,18 +1,6 @@
 {
-  "flash.nvim": {
-    "branch": "main",
-    "commit": "11a2e667d19d8f48c93c6ed2e2e525ac6b1b79be"
-  },
-  "im-select.nvim": {
-    "branch": "master",
-    "commit": "ca1aebb8f5c8a0342ae99a0fcc8ebc49b5f2201e"
-  },
-  "lazy.nvim": {
-    "branch": "main",
-    "commit": "5d29ffeaa0f2d91f1dfbc21943d19a11e59a6fc6"
-  },
-  "neo-tree.nvim": {
-    "branch": "main",
-    "commit": "5087dbda50ba178cc7920e35f51fc35995ebe261"
-  }
+  "flash.nvim": { "branch": "main", "commit": "11a2e667d19d8f48c93c6ed2e2e525ac6b1b79be" },
+  "im-select.nvim": { "branch": "master", "commit": "ca1aebb8f5c8a0342ae99a0fcc8ebc49b5f2201e" },
+  "lazy.nvim": { "branch": "main", "commit": "8f19915175395680808de529e4220da8dafc0759" },
+  "neo-tree.nvim": { "branch": "main", "commit": "29f7c215332ba95e470811c380ddbce2cebe2af4" }
 }
