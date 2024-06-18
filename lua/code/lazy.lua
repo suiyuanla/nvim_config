@@ -14,10 +14,10 @@ require("lazy").setup({{ -- 自动切换输入法
         })
     end
 }, { -- flash搜索
-    "folke/flash.nvim",
-    event = "VeryLazy",
-    ---@type Flash.Config
-    opts = {}
+    -- "folke/flash.nvim",
+    -- event = "VeryLazy",
+    -- ---@type Flash.Config
+    -- opts = {}
     -- stylua: ignore
     --     keys = {{
     --         "s",
