@@ -20,4 +20,34 @@ require("lazy").setup({
             })
         end,
     },
+    { -- 自动切换输入法
+
+        "folke/flash.nvim",
+        event = "VeryLazy",
+        ---@type Flash.Config
+        opts = {
+            highlight = {
+                -- backdrop = false, -- this doesn't do what I'd expect (i.e. remove the comment-colored backdrop)
+                groups = { backdrop = "" },
+            },
+        },
+        keys = {
+            {
+                "s",
+                mode = { "n", "x", "o" },
+                function()
+                    require("flash").jump()
+                end,
+                desc = "Flash",
+            },
+            {
+                "S",
+                mode = { "n", "x", "o" },
+                function()
+                    require("flash").treesitter()
+                end,
+                desc = "Flash Treesitter",
+            },
+        },
+    },
 })
