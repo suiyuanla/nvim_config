@@ -14,13 +14,11 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     { -- 自动切换输入法
         "keaising/im-select.nvim",
-        config = function()
-            require("im_select").setup({
-                set_default_events = { "VimEnter", "InsertLeave", "CmdlineLeave" },
-            })
-        end,
+        opts = {
+            set_default_events = { "VimEnter", "InsertLeave", "CmdlineLeave" },
+        },
     },
-    { -- 自动切换输入法
+    { -- flash 快速搜索跳转
 
         "folke/flash.nvim",
         event = "VeryLazy",
@@ -47,6 +45,20 @@ require("lazy").setup({
                     require("flash").treesitter()
                 end,
                 desc = "Flash Treesitter",
+            },
+        },
+    },
+    { -- mini.surround
+        "echasnovski/mini.surround",
+        opts = {
+            mappings = {
+                add = "gsa", -- Add surrounding in Normal and Visual modes
+                delete = "gsd", -- Delete surrounding
+                find = "gsf", -- Find surrounding (to the right)
+                find_left = "gsF", -- Find surrounding (to the left)
+                highlight = "gsh", -- Highlight surrounding
+                replace = "gsr", -- Replace surrounding
+                update_n_lines = "gsn", -- Update `n_lines`
             },
         },
     },
